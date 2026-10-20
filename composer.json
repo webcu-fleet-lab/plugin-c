@@ -1,0 +1,7 @@
+{
+  "name": "webcu-lab/plugin-c",
+  "description": "Lab dummy plugin plugin-c (no code) for the fleet CD sandbox",
+  "version": "0.1.0",
+  "type": "shopware-platform-plugin",
+  "license": "proprietary"
+}

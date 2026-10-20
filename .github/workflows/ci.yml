@@ -1,0 +1,14 @@
+# Caller stub — the CI lives in webcu-fleet-lab/fleet-ci-lab (reusable workflow
+# plugin-ci.yml). `dev` in the push trigger = the staging branch of the fleet CD.
+name: CI
+
+on:
+  push:
+    branches: [dev, main, master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  ci:
+    uses: webcu-fleet-lab/fleet-ci-lab/.github/workflows/plugin-ci.yml@main
+    secrets: inherit
